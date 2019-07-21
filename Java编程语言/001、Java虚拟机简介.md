@@ -1,3 +1,5 @@
+# Java虚拟机简介
+
 ## Java虚拟机概念
 Java虚拟机（JVM）是运行Java程序的抽象计算机，它是一种计算机设备的规范，可以采用不同的方式进行实现。Java程序通过运行在JVM中从而实现跨平台特性。
 [Java虚拟机规范官方文档](https://docs.oracle.com/javase/specs/index.html)
@@ -9,14 +11,16 @@ Java虚拟机（JVM）是运行Java程序的抽象计算机，它是一种计算
   * HotSpot Client VM：为在客户端环境中减少启动时间而优化。
   * HotSpot Server VM：为在服务器环境中最大化程序执行速度而设计。
   * 通过修改 /JDK_HOME/jre/lib/[ i386|amd64 ]/jvm.cfg 文件，调整 -server 和 -client 的顺序可以切换不同的实现。
+  
 ## JVM基本架构
 ![在这里插入图片描述](./resource/jvm-framework.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R6dzE5OTI=,size_16,color_FFFFFF,t_70)
 - Class Loader：依据特定的格式，加载class文件到内存。
 - Execution Engine：对命令进行解析。
 - Native Interface：融合不同开发语言的原生库为Java所用。
 - Runtime Data Area：JVM内存空间结构模型（JMM）。
+
 ## 类加载器（ClassLoader）
-ClassLoader主要工作在Class装载的加载阶段，其主要作用是从系统外部获得Class二进制数据流加载到内存中，并对数据进行校验、转换解析和初始化，最终形成可以被虚拟机直接使用的Java类型。所有的Class都是由ClassLoader进行加载的。
+ClassLoader主要工作在Class装载的加载阶段，其主要作用是从系统外部获得Class二进制数据流加载到内存中，并对数据进行校验、转换解析和初始化，最终形成可以被虚拟机直接使用的Java类型。所有的Class都是由ClassLoader进行加载的。  
 **1. ClassLoader的种类**
 - Bootstrap ClassLoader：启动类加载器，C++编写，用于加载核心库 java.*
 - Extension ClassLoader：扩展类加载器，Java编写，用于加载扩展库 javax.*
@@ -54,6 +58,7 @@ ClassLoader主要工作在Class装载的加载阶段，其主要作用是从系�
 **3. 类加载器的双亲委派机制**
 ![在这里插入图片描述](./resource/jvm-classloader.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R6dzE5OTI=,size_16,color_FFFFFF,t_70)
 如果一个类加载器收到了类加载的请求，它首先不会自己去尝试加载这个类，而是把这个请求委派给父类加载器去完成，每一个层次的类加载器都是如此，因此所有的加载请求最终都应该传送到顶层的启动类加载器中，只有当父加载器反馈自己无法完成这个加载请求时，子加载器才会尝试自己去加载。双亲委派机制可以有效避免多份同样的字节码被重复加载。
+
 ## Java内存模型
 **1. 程序计数器**
 程序计数器是一块较小的内存空间，它可以看作是当前线程所执行的字节码的行号指示器。在虚拟机的概念模型中，字节码解释器的工作就是通过改变这个计数器的值来选取下一条需要执行的字节码指令。为了线程切换后能恢复到正确的执行位置，每条线程都有一个独立的程序计数器，各条线程之间计数器互不影响，独立存储，所以程序计数器是线程私有的。如果线程正在执行的是一个Java方法，这个计数器记录的是正在执行的虚拟机字节码指令的地址。如果执行的是Native方法，这个计数器值则为Undefined。由于程序计数器只是记录指令的地址，所以该区域不用担心内存泄露的问题。
