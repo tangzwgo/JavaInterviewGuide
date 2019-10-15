@@ -1,5 +1,5 @@
 ## Spring Framework整体架构
-![在这里插入图片描述](./resource/Spring Framework Runtime.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R6dzE5OTI=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](./resource/spring-framework-runtime.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3R6dzE5OTI=,size_16,color_FFFFFF,t_70)
 ## 核心容器
 - **spring-core**：核心库，被多个其他模块引用。
 - **spring-beans**：bean支持，包括Groovy。
