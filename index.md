@@ -12,7 +12,7 @@
 
 [002、MySQL](https://github.com/tangzwgo/JavaInterviewGuide/tree/master/002.MySQL)
 
-003、Redis
+[003、Redis](https://github.com/tangzwgo/JavaInterviewGuide/tree/master/003.Redis)
 
 004、Kafka
 
