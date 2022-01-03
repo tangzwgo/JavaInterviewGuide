@@ -10,7 +10,7 @@
 
 [001、Java](https://github.com/tangzwgo/JavaInterviewGuide/tree/master/001.Java)
 
-002、MySQL
+[002、MySQL](https://github.com/tangzwgo/JavaInterviewGuide/tree/master/002.MySQL)
 
 003、Redis
 
