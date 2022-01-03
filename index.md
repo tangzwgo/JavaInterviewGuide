@@ -44,3 +44,10 @@
 
 019、计算机基础
 
+
+
+### 关于博主
+
+大学时老师通过一个坦克大战游戏带我进入Java世界，从此被Java的强大深深吸引住，开始了没日没夜的Java自学之旅，毕业后在互联网公司摸爬滚打了8个年头，目前在阿里巴巴 菜鸟网络从事Java开发工作，欢迎关注我的公众号一起交流学习，闲暇时聊聊技术，聊聊理财，聊聊游戏。
+
+![wechat](/Users/tangzw/workspace/JavaInterviewGuide/resource/wechat.png)
