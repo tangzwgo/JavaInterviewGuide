@@ -18,7 +18,7 @@
 
 [005、RocketMQ](https://github.com/tangzwgo/JavaInterviewGuide/tree/master/005.RocketMQ)
 
-006、ElasticSearch
+[006、ElasticSearch](https://github.com/tangzwgo/JavaInterviewGuide/tree/master/006.ElasticSearch)
 
 007、Zookeeper
 
