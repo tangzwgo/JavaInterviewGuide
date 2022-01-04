@@ -20,7 +20,7 @@
 
 [006、ElasticSearch](https://github.com/tangzwgo/JavaInterviewGuide/tree/master/006.ElasticSearch)
 
-007、Zookeeper
+[007、Zookeeper](https://github.com/tangzwgo/JavaInterviewGuide/tree/master/007.Zookeeper)
 
 008、Netty
 
