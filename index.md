@@ -14,7 +14,7 @@
 
 [003、Redis](https://github.com/tangzwgo/JavaInterviewGuide/tree/master/003.Redis)
 
-004、Kafka
+[004、Kafka](https://github.com/tangzwgo/JavaInterviewGuide/tree/master/004.Kafka)
 
 005、RocketMQ
 
