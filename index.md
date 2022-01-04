@@ -16,7 +16,7 @@
 
 [004、Kafka](https://github.com/tangzwgo/JavaInterviewGuide/tree/master/004.Kafka)
 
-005、RocketMQ
+[005、RocketMQ](https://github.com/tangzwgo/JavaInterviewGuide/tree/master/005.RocketMQ)
 
 006、ElasticSearch
 
