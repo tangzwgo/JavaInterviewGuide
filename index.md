@@ -30,7 +30,7 @@
 
 [011、Dubbo](https://github.com/tangzwgo/JavaInterviewGuide/tree/master/011.Dubbo)
 
-012、分布式
+[012、分布式](https://github.com/tangzwgo/JavaInterviewGuide/tree/master/012.分布式)
 
 013、云原生
 
